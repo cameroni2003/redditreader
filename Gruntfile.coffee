@@ -14,7 +14,7 @@ module.exports = (grunt) ->
 			options:
 				bare: true
 			compile:
-				src: ['app/main.coffee', 'app/**/*.coffee', 'test.coffee']
+				src: ['app/main.coffee', 'app/store.coffee', 'app/**/*.coffee', 'test.coffee']
 				dest: 'public/js/<%= pkg.name %>.js'
 		uglify:
 			options:
