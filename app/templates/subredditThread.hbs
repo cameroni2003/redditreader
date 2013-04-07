@@ -1,0 +1,11 @@
+<div class="container">
+	<h1>{{{title}}}</h1>
+	<div class="container">
+		<span class="text-info">{{ups}} ups</span><br>
+		<span class="text-error">{{downs}} downs</span>
+	</div>
+	<h3>by {{author}}</h3>
+	{{#if image}}
+		<img {{bindAttr src="image"}}/>
+	{{/if}}
+</div>

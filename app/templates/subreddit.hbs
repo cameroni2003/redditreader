@@ -1,0 +1,22 @@
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span3">
+			{{#each threads}}
+			<div class="container">
+				<div class="span1">
+					<span class="text-info">{{ups}}</span>
+						<br>
+					<span class="text-error">{{downs}}</span>
+				</div>
+				<div class="span3">
+					{{#linkTo subredditThread this}}{{title}}{{/linkTo}}
+				</div>
+			</div>
+			{{/each}}
+		</div>
+		<div class="span9">
+			{{outlet}}
+		</div>
+	</div>
+	
+</div>
